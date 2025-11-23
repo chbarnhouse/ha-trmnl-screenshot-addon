@@ -1,0 +1,3 @@
+#!/command/execlineb -P
+# Run the Node.js server
+/usr/bin/node /app/index.js

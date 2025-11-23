@@ -1,0 +1,29 @@
+---
+name: TRMNL Screenshot
+version: "0.1.16"
+slug: trmnl-screenshot
+description: Capture Home Assistant dashboards for TRMNL e-ink devices
+url: "https://github.com/chbarnhouse/ha-addons/tree/main/trmnl-screenshot"
+arch:
+  - amd64
+init: true
+startup: application
+boot: auto
+ports:
+  5001/tcp: 5001
+options:
+  screenshot_interval: 300
+  image_quality: 90
+  max_concurrent_captures: 3
+  log_level: info
+schema:
+  screenshot_interval: int(30,3600)
+  image_quality: int(50,100)
+  max_concurrent_captures: int(1,10)
+  log_level: list(debug|info|warning|error)
+image: "ghcr.io/chbarnhouse/{arch}-addon-trmnl-screenshot"
+ingress:
+  title: Screenshot
+  icon: mdi:camera
+  port: 5001
+  protocol: http
