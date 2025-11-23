@@ -14,18 +14,22 @@ Home Assistant addon for capturing screenshots of your Home Assistant dashboards
 
 ## Installation
 
-### Via Home Assistant Add-on Store
+### Via Home Assistant Add-on Store (Custom Repository)
 
 1. Open Home Assistant and go to **Settings → Add-ons → Add-on Store**
 2. Click the menu (⋮) and select **Repositories**
-3. Add: `https://github.com/yourusername/ha-trmnl-screenshot-addon`
+3. Add custom repository: `https://github.com/chbarnhouse/ha-trmnl-screenshot-addon`
 4. Search for "TRMNL Screenshot"
 5. Click **Install**
 6. Click **Start**
 
 ### Manual Installation
 
-1. Copy this addon to your Home Assistant `addons/` directory
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/chbarnhouse/ha-trmnl-screenshot-addon.git \
+     /home/homeassistant/addons/ha-trmnl-screenshot-addon
+   ```
 2. Go to **Settings → Add-ons → Local add-ons**
 3. Find "TRMNL Screenshot"
 4. Click **Install**
