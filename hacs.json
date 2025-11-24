@@ -1,6 +1,5 @@
 {
-  "name": "TRMNL Screenshot",
+  "name": "TRMNL Screenshot Addon",
   "homeassistant": "2024.1.0",
-  "iot_class": "local_polling",
-  "services": ["screenshot"]
+  "iot_class": "local_polling"
 }
